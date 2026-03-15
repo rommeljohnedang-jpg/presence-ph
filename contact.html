@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Get a Quote — Presence PH</title>
+  <meta name="description" content="Ready to get your professional website built? Send us a message and we'll get back to you within 24 hours." />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Contact Presence PH — Get a Free Quote" />
+  <meta property="og:description" content="Tell us about your practice and what you need. We reply within 24 hours." />
+  <meta property="og:url"         content="https://presence.ph/contact.html" />
+  <meta property="og:image"       content="https://presence.ph/og-image.png" />
+  <meta property="og:site_name"   content="Presence PH" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="canonical" href="https://presence.ph/contact.html" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <div class="navbar__inner">
+          <a href="index.html" class="navbar__logo">Presence<span>.ph</span></a>
+          <ul class="navbar__nav" role="list">
+            <li><a href="services.html"  class="navbar__link">Services</a></li>
+            <li><a href="portfolio.html" class="navbar__link">Portfolio</a></li>
+            <li><a href="about.html"     class="navbar__link">About</a></li>
+            <li><a href="contact.html"   class="navbar__link active">Contact</a></li>
+          </ul>
+          <a href="contact.html" class="btn btn--primary navbar__cta">Get a Quote</a>
+          <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar__mobile" id="mobileNav" aria-label="Mobile navigation">
+      <a href="services.html"  class="navbar__link">Services</a>
+      <a href="portfolio.html" class="navbar__link">Portfolio</a>
+      <a href="about.html"     class="navbar__link">About</a>
+      <a href="contact.html"   class="navbar__link">Contact</a>
+      <a href="contact.html"   class="btn btn--primary">Get a Quote</a>
+    </nav>
+  </header>
+
+  <!-- SERVICES STRIP -->
+  <div class="services-strip">
+    <div class="container">
+            <div class="services-strip__inner">
+        <a href="contact.html?practice=medical-dental" class="services-strip__item"><i class="fa-solid fa-stethoscope"></i> Medical &amp; Dental</a>
+        <a href="contact.html?practice=legal" class="services-strip__item"><i class="fa-solid fa-scale-balanced"></i> Legal</a>
+        <a href="contact.html?practice=architecture" class="services-strip__item"><i class="fa-solid fa-compass-drafting"></i> Architecture &amp; Construction</a>
+        <a href="contact.html?practice=consultant" class="services-strip__item"><i class="fa-solid fa-briefcase"></i> Consultants &amp; Professionals</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section__label" style="color:var(--gold);">Get in Touch</span>
+        <h1>Let's Talk About Your Practice</h1>
+        <p>Fill out the form below and we'll get back to you within 24 hours — usually sooner.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM + SIDEBAR -->
+    <section class="section" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-layout">
+
+          <!-- FORM -->
+          <div class="fade-up">
+            <h2 id="contact-heading" style="margin-bottom:1.5rem;font-size:1.3rem;">Send Us a Message</h2>
+
+            <div class="contact-form">
+
+              <!-- Success State (shown after submission) -->
+              <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+                <i class="fa-solid fa-circle-check"></i>
+                <h3>Message Received!</h3>
+                <p>Thank you for reaching out. We'll review your inquiry and get back to you within 24 hours.</p>
+                <a href="index.html" class="btn btn--outline-navy" style="margin-top:1.25rem;">Back to Home</a>
+              </div>
+
+              <!--
+                FORM SUBMISSION:
+                Replace the action attribute below with your Google Apps Script URL or Formspree endpoint.
+                Example (Formspree): action="https://formspree.io/f/YOUR_FORM_ID"
+                Example (Apps Script): action="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"
+                Leave as FORM_URL_PLACEHOLDER to show the demo success state.
+              -->
+              <form
+                id="contactForm"
+                action="FORM_URL_PLACEHOLDER"
+                method="POST"
+                novalidate
+                aria-label="Contact and quote request form"
+              >
+                <div class="form-group">
+                  <label for="name">Full Name <span class="required">*</span></label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-control"
+                    placeholder="Dr. Juan dela Cruz"
+                    required
+                    autocomplete="name"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address <span class="required">*</span></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="juan@example.com"
+                    required
+                    autocomplete="email"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Contact Number <span class="required">*</span></label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form-control"
+                    placeholder="+63 917 123 4567"
+                    required
+                    autocomplete="tel"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="practice">Type of Practice</label>
+                  <select id="practice" name="practice" class="form-control">
+                    <option value="" disabled selected>Select your practice type</option>
+                    <option value="medical-dental">Medical / Dental</option>
+                    <option value="legal">Legal</option>
+                    <option value="architecture">Architecture</option>
+                    <option value="home-builder">Home Builder / Contractor</option>
+                    <option value="accounting-finance">Accounting / Finance</option>
+                    <option value="therapy-wellness">Therapy / Wellness</option>
+                    <option value="consultant">Consultant</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="package">Package Interested In</label>
+                  <select id="package" name="package" class="form-control">
+                    <option value="" disabled selected>Select a package</option>
+                    <option value="basic">Basic — ₱5,000</option>
+                    <option value="standard">Standard — ₱10,000</option>
+                    <option value="professional">Professional — ₱15,000</option>
+                    <option value="premium">Premium — ₱20,000</option>
+                    <option value="not-sure">Not sure yet</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Tell Us About Your Practice <span class="required">*</span></label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-control"
+                    placeholder="E.g. I'm a family doctor in Cebu looking for a simple site to list my services and let patients contact me..."
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-checkbox">
+                    <input type="checkbox" id="consent" name="consent" required />
+                    <span>
+                      I agree that Presence PH may store and use this information to respond to my inquiry, as described in the
+                      <a href="privacy-policy.html">Privacy Policy</a>.
+                    </span>
+                  </label>
+                </div>
+
+                <div class="form-submit">
+                  <button type="submit" class="btn btn--primary btn--lg btn--full">
+                    <i class="fa-solid fa-paper-plane"></i> Send Message
+                  </button>
+                </div>
+
+              </form>
+            </div><!-- .contact-form -->
+          </div>
+
+          <!-- SIDEBAR -->
+          <aside class="contact-sidebar fade-up delay-2" aria-label="Contact information">
+
+            <!-- Response time -->
+            <div class="response-badge">
+              <i class="fa-solid fa-clock"></i>
+              <span><strong>We reply within 24 hours.</strong><br />Usually much sooner on weekdays.</span>
+            </div>
+
+            <!-- Quick contact -->
+            <div class="contact-info-card">
+              <h3>Reach Us Directly</h3>
+              <p>Prefer a quick message? You can reach us on WhatsApp or Messenger.</p>
+              <div class="contact-links">
+                <!--
+                  UPDATE THESE LINKS:
+                  WhatsApp: Replace YOUR_NUMBER with your number in international format (e.g. 639171234567)
+                  Messenger: Replace YOUR_PAGE_ID with your Facebook page username or ID
+                -->
+                <a href="https://wa.me/639000000000?text=Hi%20Presence%20PH%2C%20I%27d%20like%20to%20inquire%20about%20a%20website." target="_blank" rel="noopener noreferrer" class="contact-link">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  WhatsApp
+                </a>
+                <a href="https://m.me/presenceph" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  <i class="fa-brands fa-facebook-messenger"></i>
+                  Facebook Messenger
+                </a>
+                <a href="mailto:hello@presence.ph" class="contact-link">
+                  <i class="fa-solid fa-envelope"></i>
+                  hello@presence.ph
+                </a>
+              </div>
+            </div>
+
+            <!-- What to expect -->
+            <div class="contact-info-card">
+              <h3>What Happens Next</h3>
+              <p style="margin-bottom:0.75rem;">After you send your message:</p>
+              <ul style="display:flex;flex-direction:column;gap:0.75rem;padding:0;list-style:none;">
+                <li style="display:flex;align-items:flex-start;gap:0.6rem;font-size:0.875rem;color:var(--text-body);">
+                  <i class="fa-solid fa-envelope" style="color:var(--gold);margin-top:2px;flex-shrink:0;"></i>
+                  We confirm receipt within 24 hours
+                </li>
+                <li style="display:flex;align-items:flex-start;gap:0.6rem;font-size:0.875rem;color:var(--text-body);">
+                  <i class="fa-solid fa-comments" style="color:var(--gold);margin-top:2px;flex-shrink:0;"></i>
+                  We ask a few quick follow-up questions
+                </li>
+                <li style="display:flex;align-items:flex-start;gap:0.6rem;font-size:0.875rem;color:var(--text-body);">
+                  <i class="fa-solid fa-file-lines" style="color:var(--gold);margin-top:2px;flex-shrink:0;"></i>
+                  We send a detailed quote with timeline
+                </li>
+                <li style="display:flex;align-items:flex-start;gap:0.6rem;font-size:0.875rem;color:var(--text-body);">
+                  <i class="fa-solid fa-rocket" style="color:var(--gold);margin-top:2px;flex-shrink:0;"></i>
+                  We get to work once you're ready
+                </li>
+              </ul>
+            </div>
+
+            <!-- Package quick-link -->
+            <div class="contact-info-card" style="background:var(--navy);border-color:transparent;">
+              <h3 style="color:var(--white);">Not sure which package?</h3>
+              <p style="color:rgba(255,255,255,0.65);">Browse our full pricing page to compare what's included in each package.</p>
+              <a href="services.html" class="btn btn--outline" style="font-size:0.85rem;padding:0.6rem 1.25rem;">
+                View Packages <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="navbar__logo">Presence<span>.ph</span></a>
+          <p class="footer__tagline">Your Practice. Online. Done Right.<br />Professional websites for Filipino practitioners.</p>
+        </div>
+        <div>
+          <p class="footer__col-title">Pages</p>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services &amp; Pricing</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Legal</p>
+          <ul class="footer__links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="contact.html">Get a Quote</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>Built in the Philippines 🇵🇭 &nbsp;|&nbsp; &copy; <span id="year"></span> Presence PH. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="privacy-policy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Navbar
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 10), { passive: true });
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      const open = mobileNav.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', (e) => {
+      if (!navbar.contains(e.target) && !mobileNav.contains(e.target)) {
+        mobileNav.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', false);
+      }
+    });
+
+    // Intersection observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Pre-select dropdowns from URL params
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const pkg      = params.get('package');
+      const practice = params.get('practice');
+      if (pkg) {
+        const sel = document.getElementById('package');
+        if (sel) { const opt = sel.querySelector(`option[value="${pkg}"]`); if (opt) opt.selected = true; }
+      }
+      if (practice) {
+        const sel = document.getElementById('practice');
+        if (sel) { const opt = sel.querySelector(`option[value="${practice}"]`); if (opt) opt.selected = true; }
+      }
+    })();
+
+    // Form submission
+    const form       = document.getElementById('contactForm');
+    const success    = document.getElementById('formSuccess');
+    const submitBtn  = form.querySelector('[type="submit"]');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Basic validation
+      const name    = form.name.value.trim();
+      const email   = form.email.value.trim();
+      const phone   = form.phone.value.trim();
+      const message = form.message.value.trim();
+      const consent = form.consent.checked;
+
+      if (!name || !email || !phone || !message) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+      if (!consent) {
+        alert('Please agree to the privacy policy to proceed.');
+        return;
+      }
+
+      const action = form.getAttribute('action');
+
+      // Demo mode: if no real endpoint is configured
+      if (!action || action === 'FORM_URL_PLACEHOLDER') {
+        form.style.display = 'none';
+        success.style.display = 'block';
+        return;
+      }
+
+      // Live mode: submit to configured endpoint
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+
+      try {
+        const data = new FormData(form);
+        const res  = await fetch(action, { method: 'POST', body: data });
+        if (res.ok) {
+          form.style.display = 'none';
+          success.style.display = 'block';
+        } else {
+          throw new Error('Server error');
+        }
+      } catch (err) {
+        alert('Something went wrong. Please try again or contact us directly.');
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message';
+      }
+    });
+  </script>
+</body>
+</html>
