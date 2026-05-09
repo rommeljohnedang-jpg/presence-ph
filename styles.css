@@ -902,7 +902,7 @@ p:last-child { margin-bottom: 0; }
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   margin-top: 3rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .pricing-card {
@@ -912,6 +912,8 @@ p:last-child { margin-bottom: 0; }
   padding: 2rem 1.5rem;
   transition: all var(--transition);
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .pricing-card:hover {
   border-color: var(--gold);
@@ -962,6 +964,7 @@ p:last-child { margin-bottom: 0; }
   flex-direction: column;
   gap: 0.7rem;
   margin-bottom: 1.75rem;
+  flex: 1;
 }
 .feature-list li {
   display: flex;
